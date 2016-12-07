@@ -1,0 +1,51 @@
+<!--<section ng-init="tab = 1" ng-controller="panelController">-->
+    <section>
+        <ul class="nav nav-pills">
+          <li ng-class="{active:isSelected(1)}"><a href="#" ng-click="selectTab(1)">Description</a></li>
+            <li ng-class="{active:isSelected(2)}"><a href="#" ng-click="selectTab(2)">Specifications</a></li>
+              <li ng-class="{active:isSelected(3)}"><a href="#" ng-click="selectTab(3)">Reviews</a></li>
+            </ul>
+
+
+        <div class="panel panel-primary" ng-show="isSelected(1)">
+
+
+
+        <div class="panel-heading" >
+          <h4>Description</h4>
+        </div>
+        <div class="panel-body">
+          <p>{{product.description}}</p>
+        </div>
+         </div>
+
+
+         <div class="panel panel-primary" ng-show="isSelected(2)">
+           <div class="panel-heading">
+             <h4>Specifications</h4>
+           </div>
+
+           <div class="panel-body">
+             <blockquote cite="http://">
+               Not Yet
+             </blockquote>
+           </div>
+
+         </div>
+
+         <div class="panel panel-primary" ng-show="isSelected(3)">
+           <div class="panel-heading">
+             <h4>Reviews</h4>
+           </div>
+             <div class="panel-body">
+                 <div ng-repeat="review in product.reviews">
+                     stars: {{review.stars}}
+                    <blockquote>
+                        {{review.body}}
+                    </blockquote>
+                    {{review.author}}
+                 </div>
+                 <reviews></reviews>
+            </div>
+        </div>
+</section>

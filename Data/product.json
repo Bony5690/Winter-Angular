@@ -1,0 +1,51 @@
+ [{
+ 		"name": "Dodecahedron",
+ 		"price": 2.95,
+ 		"description": "Some gems have hidden qualities beyond their lustre, beyond their shine... Dodecahedron is one of those gems",
+ 		"canPurchase": true,
+ 		"soldOut": false,
+ 		"images": [{
+ 				"full": "gem-02_360.png"
+ 			}
+
+ 		],
+
+ 		"reviews": [{
+ 				" stars": 5,
+ 				" body": "I love gems",
+ 				"author": "Jerry"
+ 			},
+
+ 			{
+ 				"stars": 1,
+ 				" body": "This is a pretty gem",
+ 				"author": "John Walsh"
+ 			}
+ 		]
+
+ 	},
+
+ 	{
+ 		"name": "pentagonal gem",
+ 		"price": 5.95,
+ 		"description": "The pentagonal gem is one of our best sellers. People love the fact that it has five sides!",
+ 		"canPurchase": true,
+ 		"soldOut": false,
+ 		"images": [{
+ 			"full": "gem-02_360.png"
+ 		}],
+
+ 		"reviews": [{
+ 				" stars": 5,
+ 				" body": "I love gems",
+ 				"author": "Jerry"
+ 			},
+
+ 			{
+ 				" stars": 1,
+ 				" body": "This is a pretty gem",
+ 				"author": "molly"
+ 			}
+ 		]
+ 	}
+ ]

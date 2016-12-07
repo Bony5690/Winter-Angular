@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Coding Temple - Gem Store</title>
+  </head>
+  <body ng-controller="myController" class="container">
+      <header>
+          <div class="jumbotron">
+              <h1>Welcome to Flatlander Gemstore</h1>
+          </div>
+      </header>
+      <div class="container">
+          <div class="row">
+              <div class="col-xs-6 col-sm-6 well" ng-repeat="product in model | orderBy: 'name'">
+                  <div>
+                      <product-details></product-details>
+                  </div>
+                  <div>
+                      <panels></panels>
+                  </div>
+                  
+              </div>
+          </div>
+      </div>
+</body >
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular.js">
+</script>
+  <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="product-directives.js"></script>
+</html>
